@@ -1,126 +1,159 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: #FFF5E4; /* Cream background */
-    color: #2C5F2D; /* Forest green text */
-  }
-  
-  /* Heading styles */
-  h1, h2 {
-    color: #2C5F2D; /* Forest green */
-    text-align: center;
-  }
-  
-  /* Table styles */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    background-color: #FFE5D9; /* Peach table background */
-  }
-  
-  th, td {
-    border: 1px solid #FFD7C2; /* Peach border */
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #FFC4A3; /* Darker peach header */
-    color: #2C5F2D; /* Forest green text */
-  }
-  
-  /* Form styles */
-  form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #FFE5D9; /* Peach form background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  form div {
-    margin-bottom: 15px;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #2C5F2D; /* Forest green text */
-  }
-  
-  form input, form select, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #FFD7C2; /* Peach border */
-    border-radius: 5px;
-  }
-  
-  form input, form select, form textarea {
-    background-color: #FFF5E4; /* Cream input background */
-  }
-  
-  form button {
-    background-color: #2C5F2D; /* Forest green button */
-    color: #FFF; /* White text */
-    border: none;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #22422A; /* Darker forest green */
-  }
-  
-  /* Social media links */
-  .social-links {
-    margin-top: 30px;
-    text-align: center;
-  }
-  
-  .social-links a {
-    text-decoration: none;
-    color: #2C5F2D; /* Forest green links */
-    margin-right: 15px;
-    font-size: 16px;
-  }
-  
-  .social-links a:hover {
-    text-decoration: underline;
-    color: #22422A; /* Darker forest green on hover */
-  }
- /* Social Links Styling */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #FFF5E4; /* Cream background */
+  color: #2C5F2D; /* Forest green text */
+}
+
+/* Header styles */
+h1 {
+  color: #2C5F2D; /* Forest green */
+  text-align: center;
+  background-color: #FFE5D9; /* Peach background */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid #FFD7C2; /* Peach border */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+/* Add decorative pseudo-elements before all headings */
+h1::before, h2::before {
+  content: "★ ";
+  color: #2C5F2D; /* Forest green */
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: #FFE5D9; /* Peach table background */
+  border: 2px solid #C0C0C0; /* Silver border */
+}
+
+th, td {
+  border: 1px solid #FFD7C2; /* Peach border */
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #FFC4A3; /* Darker peach header */
+  color: #2C5F2D; /* Forest green text */
+}
+
+tbody tr:hover {
+  background-color: #FFD7C2; /* Highlight row on hover */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Form styles */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #FFE5D9; /* Peach form background */
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #C0C0C0; /* Silver border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2C5F2D; /* Forest green text */
+}
+
+/* Input, select, and textarea styling */
+form input, form select, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #FFD7C2; /* Peach border */
+  border-radius: 5px;
+  background-color: #FFF5E4; /* Cream input background */
+}
+
+/* Focus effect for text and email fields */
+form input:focus, form textarea:focus {
+  outline: 2px solid #2C5F2D; /* Forest green focus */
+  box-shadow: 0 0 5px #2C5F2D;
+  background-color: #FFF; /* Slightly brighter background */
+}
+
+/* Button styles */
+form button {
+  background-color: #2C5F2D; /* Forest green button */
+  color: #FFF; /* White text */
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #22422A; /* Darker forest green */
+}
+
+/* Footer styles */
+footer {
+  background-color: #2C5F2D; /* Forest green background */
+  color: #FFF; /* White text */
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px solid #FFD7C2; /* Peach border */
+}
+
+/* Social media links */
+.social-links {
+  margin-top: 30px;
+  text-align: center;
+}
+
 .social-links a {
-    align-items: center; /* Centers the icon vertically with the text */
-    text-decoration: none;
-    color: #2C5F2D; /* Forest green */
-    margin-right: 15px;
-    font-size: 16px;
+  text-decoration: none;
+  color: #2C5F2D; /* Forest green links */
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.social-links img {
+  width: 30px; /* Set the desired width for the icons */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+.social-links img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animations */
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
   }
-  
-  .social-links img {
-    width: 30px; /* Set the desired width for the icons */
-    height: auto; /* Maintain the aspect ratio */
-    margin-right: 10px; /* Add spacing between the icon and text */
+  to {
+      opacity: 1;
   }
-  
-  .social-links img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
-    transition: 0.3s ease; /* Smooth transition */
-  }
-  
-  .social-links a:hover {
-    color: #22422A; /* Darker forest green text on hover */
-  }
-  
-  /* Additional styles for responsiveness */
-  @media (max-width: 600px) {
-    table, form {
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  table, form {
       width: 100%;
-    }
   }
-  
+}
