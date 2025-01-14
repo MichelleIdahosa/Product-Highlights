@@ -32,6 +32,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px auto;
+  overflow-x: auto;
   background-color: #FFE5D9; /* Peach table background */
   border: 2px solid #C0C0C0; /* Silver border */
 }
